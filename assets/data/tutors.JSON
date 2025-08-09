@@ -1,0 +1,740 @@
+[
+    {
+        "name": "Ali Shahbaz",
+        "profile_image": "assets/images/ali_shahbaz .png",
+        "linkedin": "https://www.linkedin.com/in/placeholder-ali-shahbaz",
+        "subject": "Accounting",
+        "badge": "LUMS Dean’s honour list ",
+        "stats": [
+            "3+ Years Experience",
+            "NGO founder"
+        ],
+        "tagline": "Transforming numbers into narratives – Accounting, taught like an art.",
+        "details": {
+            "Academic Highlights": [
+                "ACCA Affiliate, 2024",
+                "BSc Accounting & Finance"
+            ],
+            "Extracurricular Edge": [
+                "Finance Club President",
+                "Case Competition Winner"
+            ],
+            "Teaching Style & Toolkit": "Ali Shahbaz didn’t just study accounting — he saw beauty in its balance. A former MUN President, a community service advocate, and now a passionate accounting tutor, Ali brings more than just numbers to the classroom. With over 3 years of teaching experience and a recent placement on the LUMS Dean’s Honour List, earned through an outstandingly high GPA, he blends academic rigour with a student-first approach.\n\nAli’s academic journey has always been marked by precision, consistency, and top-tier performance, whether in standardized testing, university coursework, or competitive debating. But what truly sets him apart is how he teaches. His students don’t just learn accounting — they begin to understand its logic, its structure, and even its elegance.\n\nHe relies on real-world examples, visual aids, and clear frameworks to make complex topics digestible. Students often say his classes are where things “finally start making sense.” Whether it’s for an exam or a deeper grasp of the subject, Ali’s sessions deliver clarity, confidence, and care.",
+            "Student Glimpse": "Ali helped me finally understand double-entry! Highly recommend."
+        },
+        "courseOfferings": [
+            {
+                "title": "Pre O-levels Accounting",
+                "level": "Beginner",
+                "desc": "",
+                "topics": [
+                    "Introduction to Accounting",
+                    "Double Entry Basics",
+                    "Simple Transactions"
+                ]
+            },
+            {
+                "title": "O levels Crash Course Accounting",
+                "level": "Beginner",
+                "desc": "",
+                "topics": [
+                    "Ledger Accounts",
+                    "Trial Balance",
+                    "Basic Financial Statements"
+                ]
+            },
+            {
+                "title": "As Crash Course Accounting",
+                "level": "Intermediate",
+                "desc": "",
+                "topics": [
+                    "Partnership Accounts",
+                    "Depreciation",
+                    "Bank Reconciliation"
+                ]
+            },
+            {
+                "title": "A2 Crash Course Accounting",
+                "level": "Advanced",
+                "desc": "",
+                "topics": [
+                    "Company Accounts",
+                    "Ratio Analysis",
+                    "Cash Flow Statements"
+                ]
+            }
+        ],
+        "achievements": [
+            {
+                "icon": "🏆",
+                "title": "O Level Distinction",
+                "desc": "7A* 1A O Level"
+            },
+            {
+                "icon": "📜",
+                "title": "A Level Excellence",
+                "desc": "2A* 1A A Level"
+            },
+            {
+                "icon": "💯",
+                "title": "SAT High Scorer",
+                "desc": "1500 SAT (800 Math)"
+            },
+            {
+                "icon": "🎓",
+                "title": "LUMS Dean’s Honour List",
+                "desc": "3.85 CGPA, Top 15"
+            },
+            {
+                "icon": "🧑‍🏫",
+                "title": "Experienced Tutor",
+                "desc": "3 Years Teaching"
+            },
+            {
+                "icon": "🏅",
+                "title": "Debate & MUN Awards",
+                "desc": "Countless Awards, Former MUN President"
+            },
+            {
+                "icon": "🌍",
+                "title": "Community Leader",
+                "desc": "Activist & Project Leader"
+            }
+        ],
+        "availability": {
+            "month": "January 2025",
+            "days": [
+                {
+                    "day": 1,
+                    "status": "available"
+                },
+                {
+                    "day": 2,
+                    "status": "busy"
+                },
+                {
+                    "day": 3,
+                    "status": "available"
+                },
+                {
+                    "day": 4,
+                    "status": "busy"
+                },
+                {
+                    "day": 5,
+                    "status": "available"
+                },
+                {
+                    "day": 6,
+                    "status": "busy"
+                },
+                {
+                    "day": 7,
+                    "status": "available"
+                }
+            ]
+        },
+        "contactInfo": {
+            "responseTime": "Within 1 hour",
+            "languages": "English, Urdu",
+            "timeZone": "PKT (UTC+5)",
+            "sessionTypes": "Online"
+        },
+        "ctaSection": {
+            "title": "Ready to Excel in Accounting?",
+            "desc": "Join hundreds of successful students who have achieved their dreams with Ali's expert guidance."
+        },
+        "actions": {
+            "bookDemo": "/pages/registration",
+            "learnMore": "/tutors.html#tutor-ali"
+        }
+    },
+    {
+        "name": "Ammar Shehryar",
+        "profile_image": "assets/images/ammar_sheryar.png",
+        "linkedin": "https://www.linkedin.com/in/placeholder-ammar-shehryar",
+        "subject": "SAT",
+        "badge": "SAT 1580 (2023)",
+        "stats": [
+            "4+ Years Experience",
+            "Top 1% Scorer"
+        ],
+        "tagline": "Ace everything through smart work, not hard work..",
+        "details": {
+            "Academic Highlights": [
+                "SAT 1580/1600, 2023",
+                "National Merit Scholar"
+            ],
+            "Extracurricular Edge": [
+                "Debate Team Captain",
+                "Volunteer SAT Coach"
+            ],
+            "Teaching Style & Toolkit": "Ammar is an academic prodigy, having achieved 6A* in A levels, excelled in international debates, and secured the 2nd position in the region in matriculation. His engaging and smart methodology of teaching always makes learning easier and enjoyable.",
+            "Student Glimpse": "Khadija Javed ISL 1510 SAT\nAbdur rehman Khokhar 1540 SAT\nAbdul Ahad 1470 SAT\nKhubaib Shakeel Business A*\nHassan Ali Business A*"
+        },
+        "courseOfferings": [
+            {
+                "title": "Pre O-levels Business Studies",
+                "level": "Beginner",
+                "desc": "",
+                "topics": [
+                    "Business Basics",
+                    "Types of Business",
+                    "Entrepreneurship"
+                ]
+            },
+            {
+                "title": "O levels Crash Course Business Studies",
+                "level": "Beginner",
+                "desc": "",
+                "topics": [
+                    "Business Environment",
+                    "Marketing",
+                    "Finance Basics"
+                ]
+            },
+            {
+                "title": "As Crash Course Business Studies",
+                "level": "Intermediate",
+                "desc": "",
+                "topics": [
+                    "Business Structure",
+                    "Operations Management",
+                    "Human Resources"
+                ]
+            },
+            {
+                "title": "A2 Crash Course Business Studies",
+                "level": "Advanced",
+                "desc": "",
+                "topics": [
+                    "Strategic Management",
+                    "Business Growth",
+                    "Change Management"
+                ]
+            },
+            {
+                "title": "SAT ENG",
+                "level": "All Levels",
+                "desc": "",
+                "topics": [
+                    "SAT Reading",
+                    "SAT Writing",
+                    "SAT Math"
+                ]
+            }
+        ],
+        "achievements": [
+            {
+                "icon": "🏆",
+                "title": "A Level Distinction",
+                "desc": "6A* in A levels"
+            },
+            {
+                "icon": "🥈",
+                "title": "Board Topper",
+                "desc": "2nd Position in Class 10 Board"
+            },
+            {
+                "icon": "🎖️",
+                "title": "Academic Distinctions",
+                "desc": "7 distinctions"
+            },
+            {
+                "icon": "🌍",
+                "title": "International Debater",
+                "desc": "Ranked 2nd in the world"
+            },
+            {
+                "icon": "🧑‍🏫",
+                "title": "Teacher Assistant",
+                "desc": "TA at top schools in Pakistan"
+            },
+            {
+                "icon": "🗣️",
+                "title": "Debate Coach",
+                "desc": "Coach at Aitchison College"
+            },
+            {
+                "icon": "🎓",
+                "title": "College Counsellor",
+                "desc": "Counsellor at top firm in Pakistan"
+            }
+        ],
+        "availability": {
+            "month": "January 2025",
+            "days": [
+                {
+                    "day": 1,
+                    "status": "busy"
+                },
+                {
+                    "day": 2,
+                    "status": "available"
+                },
+                {
+                    "day": 3,
+                    "status": "available"
+                },
+                {
+                    "day": 4,
+                    "status": "busy"
+                },
+                {
+                    "day": 5,
+                    "status": "available"
+                },
+                {
+                    "day": 6,
+                    "status": "available"
+                },
+                {
+                    "day": 7,
+                    "status": "busy"
+                }
+            ]
+        },
+        "contactInfo": {
+            "responseTime": "Within 2 hours",
+            "languages": "English",
+            "timeZone": "PKT (UTC+5)",
+            "sessionTypes": "Online"
+        },
+        "ctaSection": {
+            "title": "Boost Your SAT Score!",
+            "desc": "Unlock your potential with Ammar's proven SAT strategies."
+        },
+        "actions": {
+            "bookDemo": "/pages/registration",
+            "learnMore": "/tutors.html#tutor-ammar"
+        }
+    },
+    {
+        "name": "Wali Ahmad",
+        "profile_image": "https://cdn.shopify.com/s/files/1/0706/1431/9292/files/WhatsApp_Image_2025-07-05_at_1.21.13_AM.jpg?v=1751720252",
+        "linkedin": "https://www.linkedin.com/in/placeholder-wali-ahmad",
+        "subject": "Economics",
+        "badge": "LUMS BSc (2024)",
+        "stats": [
+            "3+ Years Experience",
+            "Economics Olympiad Finalist"
+        ],
+        "tagline": "Making economics engaging and practical.",
+        "details": {
+            "Academic Highlights": [
+                "BSc Economics, LUMS",
+                "Economics Olympiad Finalist"
+            ],
+            "Extracurricular Edge": [
+                "Student Council Member",
+                "Economics Society Lead"
+            ],
+            "Teaching Style & Toolkit": "Wali brings real-world case studies and interactive discussions to every session.",
+            "Student Glimpse": "Wali’s sessions made economics my favorite subject."
+        },
+        "courseOfferings": [
+            {
+                "title": "Pre O-levels Economics",
+                "level": "Beginner",
+                "desc": "",
+                "topics": [
+                    "Basic Economic Concepts",
+                    "Needs and Wants",
+                    "Introduction to Markets"
+                ]
+            },
+            {
+                "title": "O levels Crash Course Economics",
+                "level": "Beginner",
+                "desc": "",
+                "topics": [
+                    "Demand and Supply",
+                    "Market Structures",
+                    "Government Intervention"
+                ]
+            },
+            {
+                "title": "As Crash Course Economics",
+                "level": "Intermediate",
+                "desc": "",
+                "topics": [
+                    "Elasticity",
+                    "Costs and Revenues",
+                    "Macroeconomic Objectives"
+                ]
+            },
+            {
+                "title": "A2 Crash Course Economics",
+                "level": "Advanced",
+                "desc": "",
+                "topics": [
+                    "International Trade",
+                    "Development Economics",
+                    "Policy Evaluation"
+                ]
+            },
+            {
+                "title": "SAT Math",
+                "level": "All Levels",
+                "desc": "",
+                "topics": [
+                    "Algebra",
+                    "Problem Solving",
+                    "Data Analysis"
+                ]
+            }
+        ],
+        "achievements": [
+            {
+                "icon": "🏆",
+                "title": "Olympiad Finalist",
+                "desc": "Economics Olympiad Finalist"
+            },
+            {
+                "icon": "📜",
+                "title": "LUMS BSc (2024)",
+                "desc": "Academic Excellence"
+            },
+            {
+                "icon": "💼",
+                "title": "Society Lead",
+                "desc": "Leadership Experience"
+            },
+            {
+                "icon": "🎓",
+                "title": "Student Council",
+                "desc": "Student Leadership"
+            }
+        ],
+        "availability": {
+            "month": "January 2025",
+            "days": [
+                {
+                    "day": 1,
+                    "status": "available"
+                },
+                {
+                    "day": 2,
+                    "status": "available"
+                },
+                {
+                    "day": 3,
+                    "status": "busy"
+                },
+                {
+                    "day": 4,
+                    "status": "busy"
+                },
+                {
+                    "day": 5,
+                    "status": "available"
+                },
+                {
+                    "day": 6,
+                    "status": "busy"
+                },
+                {
+                    "day": 7,
+                    "status": "available"
+                }
+            ]
+        },
+        "contactInfo": {
+            "responseTime": "Within 2 hours",
+            "languages": "English, Urdu",
+            "timeZone": "PKT (UTC+5)",
+            "sessionTypes": "Online, In-Person"
+        },
+        "ctaSection": {
+            "title": "Master Economics!",
+            "desc": "Learn economics the fun and practical way with Wali."
+        },
+        "actions": {
+            "bookDemo": "/pages/registration",
+            "learnMore": "/tutors.html#tutor-wali"
+        }
+    },
+    {
+        "name": "Semal Hassan",
+        "profile_image": "assets/images/semal_hassan.png",
+        "subject": "Biology",
+        "badge": "A* A-levels (2023)",
+        "stats": [
+            "2+ Years Experience",
+            "Science Fair Winner"
+        ],
+        "tagline": "You grow through what you go through — every challenge is a chance to learn, adapt, and excel.",
+        "details": {
+            "Academic Highlights": [
+                "A* A-level Biology, 2023",
+                "Science Fair Winner"
+            ],
+            "Extracurricular Edge": [
+                "STEM Club Leader",
+                "Community Tutor"
+            ],
+            "Teaching Style & Toolkit": "Making It Personal: I take time to understand each student’s unique learning style so I can explain biology in a way that truly makes sense to them — whether that means using more real-life examples, breaking concepts down into simpler steps, or offering quick, targeted recaps.\n\nCreative Memory Tricks: Having struggled with memorization myself, I’ve developed original mnemonics and engaging stories that help students confidently recall complex processes and challenging terms.\n\nVisual Learning: I incorporate clear diagrams, flowcharts, and mind maps to help students visualize concepts like cell division or photosynthesis, so they can grasp what’s really happening instead of relying on rote memorization.",
+            "Student Glimpse": "Semal’s demos made Biology click for me!"
+        },
+        "courseOfferings": [
+            {
+                "title": "Pre O-levels Biology",
+                "level": "Beginner",
+                "desc": "",
+                "topics": [
+                    "Cell Structure",
+                    "Life Processes",
+                    "Introduction to Biology"
+                ]
+            },
+            {
+                "title": "O levels Crash Course Biology",
+                "level": "Beginner",
+                "desc": "",
+                "topics": [
+                    "Genetics",
+                    "Human Physiology",
+                    "Plant Biology"
+                ]
+            }
+        ],
+        "achievements": [
+            {
+                "icon": "🌟",
+                "title": "O Level Distinction",
+                "desc": "7A* 2A, 100% A Level Scholarship"
+            },
+            {
+                "icon": "🧑‍🏫",
+                "title": "Peer Tutoring Head",
+                "desc": "Led school-wide science tutoring program"
+            },
+            {
+                "icon": "📖",
+                "title": "Published Author",
+                "desc": "Co-authored 'Washed Away' (Amazon)"
+            },
+            {
+                "icon": "🎯",
+                "title": "Operations Director",
+                "desc": "Directed school & university organizations"
+            },
+            {
+                "icon": "🏅",
+                "title": "Best Representation Award",
+                "desc": "Community Service Society President, Nur SLP"
+            },
+            {
+                "icon": "🌍",
+                "title": "Leadership Roles",
+                "desc": "AIESEC, Madad NGO, Pourtous Intl., WWF, Brown Perspective"
+            },
+            {
+                "icon": "🎤",
+                "title": "Volunteer Affairs Lead",
+                "desc": "In-Charge at Lahore Literary Festival"
+            },
+            {
+                "icon": "🔬",
+                "title": "Science Outreach",
+                "desc": "Workshops for underprivileged students"
+            },
+            {
+                "icon": "💡",
+                "title": "Health Campaigns",
+                "desc": "Cholera awareness & biology in action"
+            },
+            {
+                "icon": "💰",
+                "title": "Fundraising Leader",
+                "desc": "Raised 300k PKR for Palestine, 200k+ PKR for women’s health"
+            }
+        ],
+        "availability": {
+            "month": "January 2025",
+            "days": [
+                {
+                    "day": 1,
+                    "status": "available"
+                },
+                {
+                    "day": 2,
+                    "status": "busy"
+                },
+                {
+                    "day": 3,
+                    "status": "available"
+                },
+                {
+                    "day": 4,
+                    "status": "available"
+                },
+                {
+                    "day": 5,
+                    "status": "busy"
+                },
+                {
+                    "day": 6,
+                    "status": "available"
+                },
+                {
+                    "day": 7,
+                    "status": "busy"
+                }
+            ]
+        },
+        "contactInfo": {
+            "responseTime": "Within 2 hours",
+            "languages": "English",
+            "timeZone": "PKT (UTC+5)",
+            "sessionTypes": "Online"
+        },
+        "ctaSection": {
+            "title": "Ace Biology!",
+            "desc": "Make Biology your strength with Semal's fun approach."
+        },
+        "actions": {
+            "bookDemo": "/pages/registration",
+            "learnMore": "/tutors.html#tutor-semal"
+        }
+    },
+    {
+        "name": "Muhammad Awais Hussain",
+        "profile_image": "assets/images/muhammad_awais.png",
+        "subject": "Physics",
+        "badge": "A* A-levels (2023)",
+        "stats": [
+            "2+ Years Experience",
+            "Robotics Club Lead"
+        ],
+        "tagline": "I teach not just to improve grades but to build confidence, curiosity, and critical thinking.",
+        "details": {
+            "Academic Highlights": [
+                "A* A-level Physics, 2023",
+                "Robotics Club Lead"
+            ],
+            "Extracurricular Edge": [
+                "Math Olympiad Finalist",
+                "Science Outreach Volunteer"
+            ],
+            "Teaching Style & Toolkit": "Muhammad Awais Hussain is an experienced and award-winning mathematics tutor with over 1,900+ hours of teaching experience across Pakistan, the UK, Dubai, and Canada. With a strong academic background in Accounting and Finance from LUMS and a proven record in national and international math competitions, Awais blends deep conceptual teaching with empathy and engagement. He has successfully guided O/A Level, IGCSE, and IB students—often turning struggling learners into confident achievers through tailored instruction, real-world examples, and strategic exam preparation. His work with underprivileged communities also reflects his commitment to equitable education.",
+            "Student Glimpse": "Awais’s energy made physics my favorite class!"
+        },
+        "courseOfferings": [
+            {
+                "title": "Pre O-levels Physics",
+                "level": "Beginner",
+                "desc": "",
+                "topics": [
+                    "Measurement",
+                    "Forces",
+                    "Energy"
+                ]
+            },
+            {
+                "title": "O levels Crash Course Physics & Chemistry",
+                "level": "Beginner",
+                "desc": "",
+                "topics": [
+                    "Waves",
+                    "Electricity",
+                    "Chemical Reactions"
+                ]
+            },
+            {
+                "title": "As Crash Course Math",
+                "level": "Intermediate",
+                "desc": "",
+                "topics": [
+                    "Algebra",
+                    "Trigonometry",
+                    "Calculus Basics"
+                ]
+            },
+            {
+                "title": "A2 Crash Course Math",
+                "level": "Advanced",
+                "desc": "",
+                "topics": [
+                    "Advanced Calculus",
+                    "Statistics",
+                    "Vectors"
+                ]
+            }
+        ],
+        "achievements": [
+            {
+                "icon": "🥇",
+                "title": "Gold Medalist",
+                "desc": "International Kangaroo Mathematics Contest (IKMC)"
+            },
+            {
+                "icon": "🏅",
+                "title": "Top in Pakistan",
+                "desc": "McDonald's Mathemania Competition"
+            },
+            {
+                "icon": "🎓",
+                "title": "Dean’s Merit List",
+                "desc": "LUMS"
+            },
+            {
+                "icon": "📈",
+                "title": "A-Level Achievement",
+                "desc": "4A 1A* in A-Level from LACAS"
+            },
+            {
+                "icon": "📚",
+                "title": "Certified",
+                "desc": "Google Data Analytics, IBM Data Science, Python Crash Course"
+            }
+        ],
+        "availability": {
+            "month": "January 2025",
+            "days": [
+                {
+                    "day": 1,
+                    "status": "busy"
+                },
+                {
+                    "day": 2,
+                    "status": "available"
+                },
+                {
+                    "day": 3,
+                    "status": "available"
+                },
+                {
+                    "day": 4,
+                    "status": "busy"
+                },
+                {
+                    "day": 5,
+                    "status": "available"
+                },
+                {
+                    "day": 6,
+                    "status": "busy"
+                },
+                {
+                    "day": 7,
+                    "status": "available"
+                }
+            ]
+        },
+        "contactInfo": {
+            "responseTime": "Within 1 hour",
+            "languages": "English, Urdu",
+            "timeZone": "PKT (UTC+5)",
+            "sessionTypes": "Online"
+        },
+        "ctaSection": {
+            "title": "Master Physics!",
+            "desc": "Experience physics in action with Awais's hands-on approach."
+        },
+        "actions": {
+            "bookDemo": "/pages/registration",
+            "learnMore": "/tutors.html#tutor-awais"
+        }
+    }
+]

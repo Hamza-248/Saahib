@@ -1,0 +1,228 @@
+/* --------------------------------------------------
+   SASS Journey Section Styles (scope under #sass-journey)
+   -------------------------------------------------- */
+#sass-journey {
+    /* color palette */
+    --bg-dark: #0d1117;
+    --border-color: #30363d;
+    --text-primary: #c9d1d9;
+    --text-secondary: #8b949e;
+    --accent-color-1: #FF5733;
+    --accent-color-2: #33FF57;
+    --accent-color-3: #3357FF;
+    --path-color: #4A90E2;
+    font-family: 'Inter', sans-serif;
+}
+
+#sass-journey .sass-journey-header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    position: relative;
+}
+
+#sass-journey .sass-journey-header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 700;
+}
+
+#sass-journey .scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--text-secondary);
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#sass-journey .scroll-indicator .arrow {
+    width: 2px;
+    height: 35px;
+    background-color: var(--text-secondary);
+    animation: sass-scroll-down 1.8s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+#sass-journey .sass-journey-timeline {
+    position: relative;
+    /* 3 animation nodes → 300vh scroll */
+    height: 300vh;
+    /* inherit your page’s own background */
+    background: none;
+}
+
+#sass-journey .timeline-sticky-container {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+/* remove any background-color from the header */
+#sass-journey .sass-journey-header {
+    background: none;
+}
+
+/* (everything else stays the same) */
+
+
+@keyframes sass-scroll-down {
+    0% {
+        transform: translateY(-15px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+
+#sass-journey .sass-journey-timeline {
+    position: relative;
+    min-height: 2500px;
+    background-color: var(--bg-dark);
+}
+
+#sass-journey .timeline-sticky-container {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#sass-journey .timeline-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    max-width: 1200px;
+    overflow: visible;
+}
+
+#sass-journey #sass-path-bg {
+    stroke: var(--border-color);
+    stroke-width: 2;
+    fill: none;
+}
+
+#sass-journey #sass-path-draw {
+    stroke: var(--path-color);
+    stroke-width: 3;
+    fill: none;
+    stroke-linecap: round;
+}
+
+#sass-journey .timeline-node {
+    fill: var(--border-color);
+    stroke: var(--bg-dark);
+    stroke-width: 4;
+    transition: fill .4s ease,
+        transform .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#sass-journey .timeline-node.visible {
+    fill: var(--accent-color-1);
+    transform-origin: center;
+    transform: scale(1.5);
+}
+
+#sass-journey .timeline-content {
+    position: absolute;
+    width: 300px;
+    padding: 1.5rem;
+    background-color: rgba(22, 27, 34, 0.8);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+    transition: opacity .5s ease,
+        transform .5s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#sass-journey .timeline-content.visible {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+#sass-journey .timeline-content.is-right::before {
+    left: -25px;
+}
+
+#sass-journey .timeline-content.is-left::before {
+    right: -25px;
+}
+
+#sass-journey .timeline-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+#sass-journey .timeline-content p {
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+#sass-journey .timeline-content p strong {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+@media (max-width: 992px) {
+    #sass-journey .timeline-content {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    #sass-journey .sass-journey-timeline {
+        min-height: 3000px;
+    }
+
+    #sass-journey .timeline-svg {
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    #sass-journey .timeline-content.is-left::before,
+    #sass-journey .timeline-content.is-right::before {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    #sass-journey #sass-path-draw,
+    #sass-journey .timeline-node,
+    #sass-journey .timeline-content {
+        transition: none !important;
+        animation: none !important;
+    }
+
+    #sass-journey .timeline-node,
+    #sass-journey .timeline-content {
+        opacity: 1;
+        transform: none;
+    }
+}

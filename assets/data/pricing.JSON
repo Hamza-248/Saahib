@@ -1,0 +1,90 @@
+{
+    "pre-o": [
+        {
+            "title": "Pre-O Basic",
+            "price": "$50",
+            "desc": "Foundation courses for Pre-IGCSE students.",
+            "features": [
+                "Math & Science basics",
+                "English Language",
+                "Weekly Assessments"
+            ]
+        },
+        {
+            "title": "Pre-O Premium",
+            "price": "$80",
+            "desc": "Premium support and extra classes for Pre-IGCSE.",
+            "features": [
+                "All Basic Features",
+                "Extra Tutoring",
+                "Parent-Teacher Meetings"
+            ]
+        }
+    ],
+    "o-level": [
+        {
+            "title": "O Level Standard",
+            "price": "$70",
+            "desc": "Comprehensive IGCSE preparation.",
+            "features": [
+                "All IGCSE Subjects",
+                "Exam Strategies",
+                "Past Papers Practice"
+            ]
+        },
+        {
+            "title": "O Level Plus",
+            "price": "$100",
+            "desc": "Includes mock exams and personal mentoring.",
+            "features": [
+                "All Standard Features",
+                "Mock Exams",
+                "Personal Mentoring"
+            ]
+        }
+    ],
+    "a-level": [
+        {
+            "title": "A Level Core",
+            "price": "$90",
+            "desc": "Advanced level courses for university prep.",
+            "features": [
+                "All A level Subjects",
+                "University Guidance",
+                "Mock Exams"
+            ]
+        },
+        {
+            "title": "A Level Elite",
+            "price": "$130",
+            "desc": "Elite package with extra support and workshops.",
+            "features": [
+                "All Core Features",
+                "Workshops",
+                "Extra Support"
+            ]
+        }
+    ],
+    "sat": [
+        {
+            "title": "SAT Prep",
+            "price": "$120",
+            "desc": "SAT preparation for college admissions.",
+            "features": [
+                "Math & English Focus",
+                "Test Taking Strategies",
+                "Full Length Mock Tests"
+            ]
+        },
+        {
+            "title": "SAT Advanced",
+            "price": "$180",
+            "desc": "Advanced SAT prep with analytics and feedback.",
+            "features": [
+                "All Prep Features",
+                "Performance Analytics",
+                "1-on-1 Feedback"
+            ]
+        }
+    ]
+}
