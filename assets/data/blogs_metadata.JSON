@@ -5,7 +5,7 @@
         "isFeatured": true,
         "title": "Top 10 Study Habits of High-Achieving Students",
         "category": "Study Skills",
-        "read_time": "6",
+        "read_time": "4",
         "author": "Mohsin Khan",
         "authorImage": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop",
         "date": "August 9, 2025",
@@ -18,7 +18,7 @@
         "isFeatured": true,
         "title": "How to Create an Effective Study Schedule That Works",
         "category": "Study Skills",
-        "read_time": "5",
+        "read_time": "3",
         "author": "Mohsin Khan",
         "authorImage": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop",
         "date": "August 9, 2025",
@@ -44,7 +44,7 @@
         "isFeatured": false,
         "title": "Time Management Tips for Busy Students",
         "category": "Productivity",
-        "read_time": "5",
+        "read_time": "4",
         "author": "Mohsin Khan",
         "authorImage": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop",
         "date": "August 9, 2025",
@@ -93,10 +93,10 @@
     {
         "id": 8,
         "slug": "how-to-prepare-for-exams-without-stress",
-        "isFeatured": false,
+        "isFeatured": true,
         "title": "How to Prepare for Exams Without Stress",
         "category": "Wellbeing",
-        "read_time": "5",
+        "read_time": "3",
         "author": "Mohsin Khan",
         "authorImage": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop",
         "date": "August 9, 2025",
@@ -158,10 +158,10 @@
     {
         "id": 13,
         "slug": "future-proof-skills-for-university-and-career",
-        "isFeatured": false,
+        "isFeatured": true,
         "title": "Beyond Top Grades: The Future-Proof Skills Your Teen Needs for University & Career Success",
         "category": "Career Advice",
-        "read_time": "6",
+        "read_time": "4",
         "author": "Mohsin Khan",
         "authorImage": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop",
         "date": "July 28, 2025",
@@ -195,5 +195,6 @@
         "path_to_content": "assets/data/blog/personalised-online-tutoring-boosts-grades.md"
     }
 ]
+
 
 
