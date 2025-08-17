@@ -10,13 +10,17 @@
   <link rel="icon" type="image/png" href="assets\images\favicon.png">
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 
   <!-- Main site CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- Swiper CSS for sliders/carousels -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
 
   <!-- Google Fonts: Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -26,11 +30,14 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
     rel="stylesheet">
 
-  <!-- jQuery (required for some plugins) -->
-  <script src="vendor/jquery/jquery.min.js"></script>
+  <!-- jQuery (required for some plugins)
+  <script src="vendor/jquery/jquery.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
   <!-- Custom site JS -->
-  <script src="assets/js/custom.js"></script>
+  <!-- <script src="assets/js/custom.js"></script> -->
 
   <!-- Component Loader (for dynamic HTML includes) -->
   <script src="assets/js/component_loader.js"></script>
@@ -44,11 +51,21 @@
 
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SLZRD4D2P8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-SLZRD4D2P8');
+</script>
+
 <body class="stunning-background">
 
 
   <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
+  <!-- <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
       <div class="dots">
@@ -57,7 +74,7 @@
         <span></span>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <header class="header-area"></header>
 
@@ -68,14 +85,14 @@
         <div class="row align-items-center">
 
           <!-- Left Side: Text Content -->
-          <div class="col-lg-7 col-xl-6 hero-content text-center text-lg-start">
+          <div class="hero-content text-center text-lg-start">
             <h1 class="display-4 text-white">
-              Unlock Your Full Potential. <span class="highlight">Master Every Subject.</span>
+              Unlock Your Full Potential <span class="highlight">Master Every Subject.</span>
             </h1>
             <p class="lead mx-auto mx-lg-0">
-              At Saahib, we connect you with elite tutors who don't just teach—they inspire. Our unique
-              framework creates a personalized learning path, turning complex challenges into moments of
-              triumph.
+              At Saahib, students are guided by accomplished tutors who combine subject mastery with meaningful
+              mentorship. Through our proprietary SASS framework, we offer a structured and personalized learning
+              experience that transforms academic challenges into measurable success.
             </p>
             <div class="d-flex flex-column align-items-center align-items-lg-start">
               <button class="btn btn-custom">
@@ -139,9 +156,9 @@
                     d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h12A2.25 2.25 0 0120.25 6v3.776" />
                 </svg>
               </div>
-              <h3>Pick Your Courses</h3>
-              <p>Explore our wide range of subjects, from STEM to humanities, and choose the courses that perfectly
-                match your academic goals.</p>
+              <h3>Select Your Subjects</h3>
+              <p>Explore over 25 O/A-Level subjects, delivered by A* certified instructors from leading academic
+                institutions worldwide.</p>
             </div>
           </div>
         </div>
@@ -159,8 +176,8 @@
                 </svg>
               </div>
               <h3>Book a Free Trial</h3>
-              <p>Experience our teaching methodology firsthand. Schedule a no-obligation trial class to meet our
-                expert instructors and see our platform.</p>
+              <p>Book a free trial with our expert tutors and experience a structured, data-driven teaching unlike any
+                other academic platform.</p>
             </div>
           </div>
         </div>
@@ -178,8 +195,8 @@
                 </svg>
               </div>
               <h3>Consult & Enroll</h3>
-              <p>After your trial, our academic advisors will consult with you to finalize your schedule and complete
-                a seamless enrollment process.</p>
+              <p>Speak with our Education Counselor for tailored academic guidance, and take the next step in your
+                learning journey with clarity and confidence.</p>
             </div>
           </div>
         </div>
