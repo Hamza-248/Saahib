@@ -1,0 +1,226 @@
+{
+    "courses": {
+        "Primary_Education": {
+            "4_Subject_bundle": {
+                "title": "4 Subject Bundle",
+                "description": "A comprehensive package covering core subjects...",
+                "is_popular": true,
+                "weekly_sessions": "8 Sessions",
+                "note": "Insert a consult / Contact Button instead of enroll now",
+                "key_features": [
+                    "Core Subjects Mastery (Eng, Urdu, Maths, Sci)",
+                    "Interactive & Fun Learning Activities",
+                    "Build Strong Academic Foundations",
+                    "Flexible Schedule via Consultation"
+                ],
+                "fees": {
+                    "SAR": "SAR 599",
+                    "QAR": "QAR 599.00",
+                    "KWD": "KWD 55.00",
+                    "BHD": "BHD 60.00",
+                    "OMR": "OMR 60.00",
+                    "AED": "AED 599",
+                    "GBP": "GBP 119"
+                }
+            },
+            "3_Subject_bundle": {
+                "title": "3 Subject Bundle",
+                "description": "Focus on key areas of improvement...",
+                "is_popular": false,
+                "weekly_sessions": "6 Sessions",
+                "key_features": [
+                    "Essential Subjects Focus (Maths, Eng, Sci)",
+                    "Targeted Support for Key Skills",
+                    "Build Confidence in Core Areas",
+                    "Flexible Schedule via Consultation"
+                ],
+                "fees": {
+                    "SAR": "SAR 499",
+                    "QAR": "QAR 499.00",
+                    "KWD": "KWD 45.00",
+                    "BHD": "BHD 50.00",
+                    "OMR": "OMR 50.00",
+                    "AED": "AED 499",
+                    "GBP": "GBP 99"
+                }
+            }
+        },
+        "Grade_8_9": {
+            "Comprehensive_Course": {
+                "title": "Comprehensive Course",
+                "description": "Build a strong foundation with personalized tutoring...",
+                "is_popular": true,
+                "plan_type": "Per Subject",
+                "note": "Insert a consult / Contact Button instead of enroll now",
+                "sessions_per_subject": 2,
+                "available_subjects": [
+                    "Economics",
+                    "Business Studies",
+                    "Accounting",
+                    "Physics",
+                    "Chemistry",
+                    "Mathematics",
+                    "Biology"
+                ],
+                "per_subject_fee": {
+                    "SAR": 499,
+                    "QAR": 499,
+                    "KWD": 45,
+                    "BHD": 50,
+                    "OMR": 50,
+                    "AED": 499,
+                    "GBP": 99
+                },
+                "key_features": [
+                    "Master Your Chosen Subjects",
+                    "Interactive Concept-Building Classes",
+                    "Track Your Progress with Regular Quizzes",
+                    "Flexible Scheduling on Consultation"
+                ]
+            }
+        },
+        "IGCSE_GCSE": {
+            "Comprehensive_Course": {
+                "title": "Comprehensive Course",
+                "description": "Ideal for a complete review of the entire syllabus...",
+                "is_popular": true,
+                "plan_type": "Per Subject",
+                "sessions_per_subject": 2,
+                "available_subjects": [
+                    "Economics",
+                    "Business Studies",
+                    "Accounting",
+                    "Physics",
+                    "Chemistry",
+                    "Mathematics",
+                    "Biology"
+                ],
+                "per_subject_fee": {
+                    "SAR": 699,
+                    "QAR": 699,
+                    "KWD": 60,
+                    "BHD": 70,
+                    "OMR": 70,
+                    "AED": 699,
+                    "GBP": 140
+                },
+                "key_features": [
+                    "Full Syllabus Coverage for Top Grades",
+                    "Strategic Past-Paper Workshops",
+                    "Live Interactive & Recorded Classes",
+                    "Personalized Progress Tracking"
+                ]
+            },
+            "Accelerated_Prep_Course": {
+                "title": "Accelerated Prep Course",
+                "description": "An intensive, fast-paced program...",
+                "is_popular": false,
+                "plan_type": "Per Subject",
+                "sessions_per_subject": 3,
+                "payment_type": "Single Payment",
+                "available_subjects": [
+                    "Economics",
+                    "Business Studies",
+                    "Accounting",
+                    "Physics",
+                    "Chemistry",
+                    "Mathematics",
+                    "Biology"
+                ],
+                "per_subject_fee": {
+                    "SAR": 1499,
+                    "QAR": 1499,
+                    "KWD": 130,
+                    "BHD": 150,
+                    "OMR": 150,
+                    "AED": 1499,
+                    "GBP": 299
+                },
+                "key_features": [
+                    "Intensive 6-Week Exam Preparation",
+                    "Daily High-Yield Past-Paper Drills",
+                    "Master Time Management Strategies",
+                    "Proven Score-Boosting Techniques"
+                ]
+            }
+        },
+        "A_levels": {
+            "Comprehensive_Course": {
+                "title": "Comprehensive Course",
+                "description": "Deep dive into complex A-Level topics...",
+                "is_popular": true,
+                "plan_type": "Per Subject",
+                "sessions_per_subject": 2,
+                "available_subjects": [
+                    "Economics",
+                    "Business Studies",
+                    "Accounting",
+                    "Physics",
+                    "Chemistry",
+                    "Mathematics",
+                    "Biology"
+                ],
+                "per_subject_fee": {
+                    "SAR": 799,
+                    "QAR": 799,
+                    "KWD": 70,
+                    "BHD": 80,
+                    "OMR": 80,
+                    "AED": 799,
+                    "GBP": 159
+                },
+                "key_features": [
+                    "In-Depth A-Level Concept Mastery",
+                    "Advanced Problem-Solving Workshops",
+                    "Official A-Level Mock Exams",
+                    "Access to All Class Recordings"
+                ]
+            }
+        },
+        "SAT": {
+            "SAT_Mastery_Course": {
+                "title": "SAT Mastery Course",
+                "description": "A comprehensive program covering all sections of the SAT...",
+                "is_popular": true,
+                "weekly_sessions": "4 Sessions",
+                "key_features": [
+                    "Unlock Top Scores with Proven Strategies",
+                    "Official Digital SAT Practice Tests",
+                    "Full-Length Proctored Mock Exams",
+                    "Expert Guidance from Top Instructors"
+                ],
+                "fees": {
+                    "SAR": "SAR 699.00",
+                    "QAR": "QAR 699.00",
+                    "KWD": "KWD 60.00",
+                    "BHD": "BHD 70.00",
+                    "OMR": "OMR 70.00",
+                    "AED": "AED 699.00",
+                    "GBP": "GBP 139"
+                }
+            },
+            "SAT_Express_Prep": {
+                "title": "SAT Express Prep",
+                "description": "A high-intensity bootcamp for students on a tight schedule...",
+                "is_popular": false,
+                "weekly_sessions": "6 Sessions",
+                "payment_type": "Single Payment",
+                "key_features": [
+                    "High-Intensity 4-Week SAT Bootcamp",
+                    "Targeted Question & Answer Drills",
+                    "Personalized Performance Analysis",
+                    "Master Time-Saving Techniques"
+                ],
+                "fees": {
+                    "SAR": "SAR 999.00",
+                    "QAR": "QAR 999.00",
+                    "KWD": "KWD 90.00",
+                    "BHD": "BHD 100.00",
+                    "OMR": "OMR 100.00",
+                    "AED": "AED 999.00",
+                    "GBP": "GBP 199"
+                }
+            }
+        }
+    }
+}

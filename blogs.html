@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saahib | Blogs</title>
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="assets\images\favicon.png">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Main site CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Swiper CSS for sliders/carousels -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+    rel="stylesheet">
+
+  <!-- jQuery (required for some plugins) -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+
+  <!-- Custom site JS -->
+  <script src="assets/js/custom.js"></script>
+
+  <!-- Component Loader (for dynamic HTML includes) -->
+  <script src="assets/js/component_loader.js"></script>
+
+  <!-- Bootstrap JS Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Feather Icons for UI elements -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+</head>
+
+<body class="stunning-background">
+
+  <header class="header-area"></header>
+
+  <section class="blog-section">
+    <div class="container">
+
+      <!-- MODIFIED: Featured Article Slider Container -->
+      <div id="featured-article-container" class="featured-slider-container">
+        <div class="loading-placeholder">Loading featured articles...</div>
+      </div>
+
+      <!-- Trending Section -->
+      <div id="trending-section-container" class="trending-section d-none">
+        <h2 class="section-title">Trending Now</h2>
+        <div id="trending-grid" class="trending-scroll-container"></div>
+      </div>
+
+      <!-- Filter Controls Structure -->
+      <div id="filter-controls-container" class="filter-wrapper d-none">
+        <button id="filter-scroll-left" class="scroll-arrow d-none"><i data-feather="chevron-left"></i></button>
+        <div id="filter-scroll" class="filter-scroll-container"></div>
+        <button id="filter-scroll-right" class="scroll-arrow d-none"><i data-feather="chevron-right"></i></button>
+      </div>
+
+
+      <!-- Blog Grid -->
+      <div class="blog-grid-wrapper">
+        <div class="row g-4" id="blog-grid">
+          <div class="loading-placeholder col-12">Loading articles...</div>
+        </div>
+        <div id="no-results-message" class="no-results-message">
+          <h4>No articles match your filter.</h4>
+          <p>Try selecting a different category.</p>
+        </div>
+      </div>
+
+      <!-- "View More" Button -->
+      <div id="view-more-container" class="view-more-container d-none">
+        <button id="btn-view-more" class="btn-view-more">View More</button>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="rich-footer"></footer>
+
+  <script src="assets/js/blogs.js"></script>
+
+</body>
+
+</html>
