@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async function () {
   async function loadPricingData() {
     try {
       // NOTE: Make sure this path is correct for your project structure.
-      const response = await fetch('assets/data/pricing.json');
+      const response = await fetch('https://github.com/Hamza-248/Saahib/blob/19ac12bf79fddbeb67a3ad10f4732e9ab662ea28/assets/data/pricing.JSON');
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       pricingData = await response.json();
     } catch (error) {
@@ -325,3 +325,4 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   init();
 });
+
