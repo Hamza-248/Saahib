@@ -16,11 +16,279 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             // Fetch the tutor data from the external JSON file.
             // CORRECTED: Path updated to 'tutor.js'
-            const response = await fetch('https://github.com/Hamza-248/Saahib/blob/b4b85c03b427172289a8f63a922175f450ba59a4/assets/data/tutors.JSON');
-            if (!response.ok) {
-                // If the server response is not OK (e.g., 404 Not Found), throw an error.
-                throw new Error(`HTTP error! status: ${response.status}`);
+            const response = "[
+    {
+        "name": "Ali Shahbaz",
+        "profile_image": "assets/images/tutors/ali_shahbaz.png",
+        "subject": "Accounting",
+        "badge": "LUMS Dean’s Honour list",
+        "tagline": "Transforming numbers into narratives – Accounting, taught like an art.",
+        "details": {
+            "Teaching Style & Toolkit": "Ali Shahbaz didn’t just study accounting — he saw beauty in its balance. He blends academic rigour with a student-first approach, using real-world examples and visual aids to make complex topics digestible.",
+            "Student Glimpse": "Ali helped me finally understand double-entry! Highly recommend."
+        },
+        "courseOfferings": [
+            {
+                "title": "Pre O-levels Accounting",
+                "level": "Beginner"
+            },
+            {
+                "title": "O levels Crash Course Accounting",
+                "level": "Beginner"
+            },
+            {
+                "title": "As Crash Course Accounting",
+                "level": "Intermediate"
+            },
+            {
+                "title": "A2 Crash Course Accounting",
+                "level": "Advanced"
             }
+        ],
+        "achievements": [
+            {
+                "icon": "🏆",
+                "title": "O Level Distinction"
+            },
+            {
+                "icon": "📜",
+                "title": "A Level Excellence"
+            },
+            {
+                "icon": "💯",
+                "title": "SAT High Scorer"
+            }
+        ],
+        "contactInfo": {
+            "responseTime": "Within 1 hour",
+            "languages": "English, Urdu",
+            "sessionTypes": "Online"
+        },
+        "ctaSection": {
+            "title": "Ready to Excel in Accounting?",
+            "desc": "Join hundreds of successful students with Ali's expert guidance."
+        },
+        "actions": {
+            "bookDemo": "#registration-section"
+        }
+    },
+    {
+        "name": "Ammar Shehryar",
+        "profile_image": "assets/images/tutors/ammar_shehryar.png",
+        "subject": "SAT",
+        "badge": "SAT 1580 (2023)",
+        "tagline": "Ace everything through smart work, not hard work..",
+        "details": {
+            "Teaching Style & Toolkit": "Ammar's engaging and smart methodology of teaching always makes learning easier and enjoyable.",
+            "Student Glimpse": "Khadija Javed ISL 1510 SAT, Abdur rehman Khokhar 1540 SAT"
+        },
+        "courseOfferings": [
+            {
+                "title": "Pre O-levels Business Studies",
+                "level": "Beginner"
+            },
+            {
+                "title": "O levels Crash Course Business Studies",
+                "level": "Beginner"
+            },
+            {
+                "title": "As Crash Course Business Studies",
+                "level": "Intermediate"
+            },
+            {
+                "title": "A2 Crash Course Business Studies",
+                "level": "Advanced"
+            },
+            {
+                "title": "SAT ENG",
+                "level": "All Levels"
+            }
+        ],
+        "achievements": [
+            {
+                "icon": "🏆",
+                "title": "A Level Distinction"
+            },
+            {
+                "icon": "🥈",
+                "title": "Board Topper"
+            },
+            {
+                "icon": "🌍",
+                "title": "International Debater"
+            }
+        ],
+        "contactInfo": {
+            "responseTime": "Within 2 hours",
+            "languages": "English",
+            "sessionTypes": "Online"
+        },
+        "ctaSection": {
+            "title": "Boost Your SAT Score!",
+            "desc": "Unlock your potential with Ammar's proven SAT strategies."
+        },
+        "actions": {
+            "bookDemo": "#registration-section"
+        }
+    },
+    {
+        "name": "Wali Ahmad",
+        "profile_image": "assets/images/tutors/wali_ahmad.jpg",
+        "subject": "Economics",
+        "badge": "LUMS BSc (2024)",
+        "tagline": "Making economics engaging and practical.",
+        "details": {
+            "Teaching Style & Toolkit": "Wali brings real-world case studies and interactive discussions to every session.",
+            "Student Glimpse": "Wali’s sessions made economics my favorite subject."
+        },
+        "courseOfferings": [
+            {
+                "title": "Pre O-levels Economics",
+                "level": "Beginner"
+            },
+            {
+                "title": "O levels Crash Course Economics",
+                "level": "Beginner"
+            },
+            {
+                "title": "As Crash Course Economics",
+                "level": "Intermediate"
+            },
+            {
+                "title": "A2 Crash Course Economics",
+                "level": "Advanced"
+            }
+        ],
+        "achievements": [
+            {
+                "icon": "🏆",
+                "title": "Olympiad Finalist"
+            },
+            {
+                "icon": "📜",
+                "title": "LUMS BSc (2024)"
+            },
+            {
+                "icon": "💼",
+                "title": "Society Lead"
+            }
+        ],
+        "contactInfo": {
+            "responseTime": "Within 2 hours",
+            "languages": "English, Urdu",
+            "sessionTypes": "Online, In-Person"
+        },
+        "ctaSection": {
+            "title": "Master Economics!",
+            "desc": "Learn economics the fun and practical way with Wali."
+        },
+        "actions": {
+            "bookDemo": "#registration-section"
+        }
+    },
+    {
+        "name": "Semal Hassan",
+        "profile_image": "assets/images/tutors/semal_hassan.png",
+        "subject": "Biology",
+        "badge": "A* A-levels (2023)",
+        "tagline": "You grow through what you go through — every challenge is a chance to learn, adapt, and excel.",
+        "details": {
+            "Teaching Style & Toolkit": "I incorporate clear diagrams, flowcharts, and mind maps to help students visualize concepts.",
+            "Student Glimpse": "Semal’s demos made Biology click for me!"
+        },
+        "courseOfferings": [
+            {
+                "title": "Pre O-levels Biology",
+                "level": "Beginner"
+            },
+            {
+                "title": "O levels Crash Course Biology",
+                "level": "Beginner"
+            }
+        ],
+        "achievements": [
+            {
+                "icon": "🌟",
+                "title": "O Level Distinction"
+            },
+            {
+                "icon": "📖",
+                "title": "Published Author"
+            },
+            {
+                "icon": "🌍",
+                "title": "Leadership Roles"
+            }
+        ],
+        "contactInfo": {
+            "responseTime": "Within 2 hours",
+            "languages": "English",
+            "sessionTypes": "Online"
+        },
+        "ctaSection": {
+            "title": "Ace Biology!",
+            "desc": "Make Biology your strength with Semal's fun approach."
+        },
+        "actions": {
+            "bookDemo": "#registration-section"
+        }
+    },
+    {
+        "name": "Muhammad Awais Hussain",
+        "profile_image": "assets/images/tutors/muhammad_awais_hussain.png",
+        "subject": "Physics",
+        "badge": "A* A-levels (2023)",
+        "tagline": "I teach not just to improve grades but to build confidence, curiosity, and critical thinking.",
+        "details": {
+            "Teaching Style & Toolkit": "Awais blends deep conceptual teaching with empathy and engagement, turning struggling learners into confident achievers.",
+            "Student Glimpse": "Awais’s energy made physics my favorite class!"
+        },
+        "courseOfferings": [
+            {
+                "title": "Pre O-levels Physics",
+                "level": "Beginner"
+            },
+            {
+                "title": "O levels Crash Course Physics & Chemistry",
+                "level": "Beginner"
+            },
+            {
+                "title": "As Crash Course Math",
+                "level": "Intermediate"
+            },
+            {
+                "title": "A2 Crash Course Math",
+                "level": "Advanced"
+            }
+        ],
+        "achievements": [
+            {
+                "icon": "🥇",
+                "title": "Gold Medalist IKMC"
+            },
+            {
+                "icon": "🏅",
+                "title": "Top in Pakistan"
+            },
+            {
+                "icon": "🎓",
+                "title": "Dean’s Merit List"
+            }
+        ],
+        "contactInfo": {
+            "responseTime": "Within 1 hour",
+            "languages": "English, Urdu",
+            "sessionTypes": "Online"
+        },
+        "ctaSection": {
+            "title": "Master Physics!",
+            "desc": "Experience physics in action with Awais's hands-on approach."
+        },
+        "actions": {
+            "bookDemo": "#registration-section"
+        }
+    }
+]";
             // Parse the JSON data from the response.
             const data = await response.json();
 
@@ -206,6 +474,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     loadTutors();
 });
+
 
 
 
