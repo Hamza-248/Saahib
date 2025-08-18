@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             // Fetch the tutor data from the external JSON file.
             // CORRECTED: Path updated to 'tutor.js'
-            const response = await fetch('assets/data/tutors.json');
+            const response = await fetch('/assets/data/tutors.json');
             if (!response.ok) {
                 // If the server response is not OK (e.g., 404 Not Found), throw an error.
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -206,3 +206,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     loadTutors();
 });
+
