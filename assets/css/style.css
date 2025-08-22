@@ -152,6 +152,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--dark-bg);
   color: var(--light-text);
+  overflow-x: hidden !important;
+  /* hides and prevents horizontal scroll */
+  overscroll-behavior-x: none;
+  /* no sideways bounce on mobile */
 }
 
 a {
@@ -285,7 +289,7 @@ html[xmlns] .clearfix {
   font-family: var(--font-family);
   background-color: var(--dark-bg);
   color: var(--light-text);
-  background-image: radial-gradient(at 0% 0%, hsla(28, 79%, 52%, 0.2) 0px, transparent 50%),
+  background-image: radial-gradient(at 0% 0%, hsla(0, 0%, 100%, 0.1) 0px, transparent 50%),
     radial-gradient(at 98% 99%, hsla(0, 0%, 100%, 0.1) 0px, transparent 50%);
   /* This uses multiple background gradients to create a starfield effect */
   background-size: cover;
@@ -301,74 +305,69 @@ html[xmlns] .clearfix {
 --------------------------------------------- */
 
 /* --- Preloader --- */
-.js-preloader {
+/* --- NEW PRELOADER STYLES --- */
+.preloader {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.99);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-bg);
+  background-image: radial-gradient(at 0% 0%, hsla(0, 0%, 100%, 0.1) 0px, transparent 50%),
+    radial-gradient(at 98% 99%, hsla(0, 0%, 100%, 0.05) 0px, transparent 50%);
+  z-index: 9999;
+  transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
   opacity: 1;
   visibility: visible;
-  z-index: 9999;
-  transition: opacity 0.25s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.js-preloader.loaded {
+.preloader.fade-out {
   opacity: 0;
   visibility: hidden;
-  pointer-events: none;
 }
 
-.preloader-inner {
-  position: relative;
-  width: 142px;
-  height: 40px;
-  background: transparent;
+.preloader-favicon {
+  width: 160px;
+  /* Adjust the size of your favicon as needed */
+  height: auto;
+  animation: pulse 2.5s infinite ease-in-out;
 }
 
-.preloader-inner .dot {
+@media (max-width: 992.2px) {
+  .preloader-favicon {
+    width: 17vh;
+    height: auto;
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+#gradient-canvas {
+  width: 100%;
+  height: 100%;
+  --gradient-color-1: #1a1a1d;
+  --gradient-color-2: #3c1e0a;
+  --gradient-color-3: #121212;
+  --gradient-color-4: #3c2a1e;
   position: absolute;
-  width: 16px;
-  height: 16px;
-  top: 12px;
-  left: 15px;
-  background: var(--primary-color);
-  border-radius: 50%;
-  transform: translateX(0);
-  animation: dot 2.8s infinite;
-}
-
-.preloader-inner .dots {
-  transform: translateX(0);
-  margin-top: 12px;
-  margin-left: 31px;
-  animation: dots 2.8s infinite;
-}
-
-.preloader-inner .dots span {
-  display: block;
-  float: left;
-  width: 16px;
-  height: 16px;
-  margin-left: 16px;
-  background: var(--primary-color);
-  border-radius: 50%;
-}
-
-@keyframes dot {
-  50% {
-    transform: translateX(96px);
-  }
-}
-
-@keyframes dots {
-  50% {
-    transform: translateX(-31px);
-  }
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 /*
@@ -413,18 +412,18 @@ body {
   right: 0;
   z-index: 1000;
   background: transparent;
-  /* Transparent by default */
+  /* fallback for Android */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  transition: background-color 0.4s ease, border-color 0.4s ease;
+  transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.3s ease;
   border-bottom: 1px solid transparent;
-  /* Transparent border by default */
+  /* default transparent */
+  -webkit-tap-highlight-color: transparent;
 }
 
-/* Scrolled state for the header */
 .header-area.scrolled {
-  background: var(--bg-dark-glass);
-  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-dark-glass, rgba(18, 18, 18, 0.6));
+  border-bottom: 1px solid var(--border-color, rgba(255, 255, 255, 0.08));
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -435,6 +434,8 @@ body {
 }
 
 .main-nav {
+  position: relative;
+  /* anchor abs elements (hamburger, mobile panel) */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -466,7 +467,7 @@ body {
 }
 
 .main-nav .nav>li>a {
-  color: var(--light-text);
+  color: var(--light-text, #ffffff);
   font-size: 16px;
   font-weight: 500;
   padding: 5px 0;
@@ -476,7 +477,7 @@ body {
   align-items: center;
 }
 
-/* Underline animation on hover */
+/* Underline animation on hover (desktop) */
 .main-nav .nav>li>a::after {
   content: '';
   position: absolute;
@@ -484,7 +485,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color, #F76821);
   transition: width 0.3s ease;
 }
 
@@ -494,11 +495,11 @@ body {
 }
 
 .main-nav .nav>li>a:hover {
-  color: var(--primary-color);
+  color: var(--primary-color, #F76821);
 }
 
 /* ---------------------------------------------
-   REGIONS DROPDOWN (DESKTOP)
+   REGIONS DROPDOWN (DESKTOP)
 --------------------------------------------- */
 .main-nav .nav li.has-sub {
   position: relative;
@@ -516,14 +517,15 @@ body {
   gap: 8px;
 }
 
+/* Desktop dropdown panel */
 .main-nav .nav li .sub-menu {
   position: absolute;
   top: 90%;
   left: 50%;
   transform: translateX(-50%);
   width: 240px;
-  background: var(--bg-dark-solid);
-  border: 1px solid var(--border-color);
+  background: var(--bg-dark-solid, #181818);
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.08));
   border-radius: 12px;
   padding: 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
@@ -533,7 +535,15 @@ body {
   z-index: 10;
 }
 
+/* Show submenu by hover (desktop) */
 .main-nav .nav li.has-sub:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+/* Also allow JS class to force show (desktop) */
+.main-nav .nav li .sub-menu.show {
   opacity: 1;
   visibility: visible;
   top: 100%;
@@ -543,19 +553,19 @@ body {
   display: flex;
   align-items: center;
   padding: 10px 15px;
-  color: var(--muted-text);
+  color: var(--muted-text, #d3d3d3);
   font-size: 15px;
   border-radius: 8px;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .sub-menu li a:hover {
-  background-color: var(--primary-color);
-  color: var(--light-text);
+  background-color: var(--primary-color, #F76821);
+  color: var(--light-text, #ffffff);
 }
 
 .sub-menu li a.active-region {
-  color: var(--primary-color);
+  color: var(--primary-color, #F76821);
   font-weight: 600;
 }
 
@@ -571,8 +581,8 @@ body {
    CTA BUTTON & MOBILE TRIGGER
 --------------------------------------------- */
 .header-btn {
-  background: var(--primary-color);
-  color: var(--light-text);
+  background: var(--primary-color, #F76821);
+  color: var(--light-text, #ffffff);
   border: none;
   padding: 0 30px;
   height: 50px;
@@ -585,11 +595,11 @@ body {
 }
 
 .header-btn:hover {
-  background: var(--primary-hover-color);
+  background: var(--primary-hover-color, #F75505);
   transform: scale(1.05);
 }
 
-/* --- Mobile Menu Trigger --- */
+/* --- Mobile Menu Trigger (expects: <a class="menu-trigger"><span></span></a>) --- */
 .menu-trigger {
   display: none;
   position: absolute;
@@ -598,30 +608,61 @@ body {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 1001;
+  /* above header content */
 }
 
-.menu-trigger.active span,
-.menu-trigger span {
-  display: block;
+/* If an <img> is still inside .menu-trigger, hide it on mobile to avoid overlap */
+@media (max-width: 1024px) {
+  .menu-trigger img {
+    display: none;
+  }
+}
+
+/* Base hamburger line; will create 3 bars via ::before/::after */
+.menu-trigger span,
+.menu-trigger span::before,
+.menu-trigger span::after {
+  position: absolute;
+  left: 0;
   width: 100%;
-  height: 4px;
-  background-color: var(--primary-color);
-  margin: 5px 0;
+  height: 2px;
+  background-color: var(--light-text, #ffffff);
+  border-radius: 2px;
   transition: all 0.3s ease;
+  content: '';
+  display: block;
 }
 
-.menu-trigger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+.menu-trigger span {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.menu-trigger.active span:nth-child(2) {
-  opacity: 0;
+.menu-trigger span::before {
+  top: -9px;
+
 }
 
-.menu-trigger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+.menu-trigger span::after {
+  top: 9px;
 }
+
+.menu-trigger {
+  transform: rotate(0deg);
+  /* <— explicit value, not 'none' */
+  transition: transform .5s ease;
+  /* applies on open AND close */
+  transform-origin: 50% 50%;
+}
+
+/* Open state (menu open) */
+.menu-trigger.active {
+  transform: rotate(90deg);
+  /* shows vertical | | | while open */
+}
+
+
 
 @media (max-width: 1024px) {
   .menu-trigger {
@@ -634,55 +675,10 @@ body {
 --------------------------------------------- */
 @media (max-width: 1024px) {
 
-  /* Hide desktop navigation and show mobile trigger */
+  /* Hide desktop nav & CTA by default; open via .active */
   .main-nav .nav,
   .header-btn {
     display: none;
-  }
-
-  .menu-trigger {
-    display: block;
-  }
-
-  .menu-trigger span,
-  .menu-trigger span:before,
-  .menu-trigger span:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--light-text);
-    border-radius: 2px;
-    transition: all 0.3s ease;
-  }
-
-  .menu-trigger span {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .menu-trigger span:before {
-    top: -9px;
-  }
-
-  .menu-trigger span:after {
-    bottom: -9px;
-  }
-
-  /* Animate hamburger to 'X' */
-  .menu-trigger.active span {
-    background-color: transparent;
-  }
-
-  .menu-trigger.active span:before {
-    transform: rotate(45deg);
-    top: 0;
-  }
-
-  .menu-trigger.active span:after {
-    transform: rotate(-45deg);
-    bottom: 0;
   }
 
   /* Mobile navigation panel */
@@ -692,15 +688,17 @@ body {
     left: 0;
     right: 0;
     width: 100%;
-    background: var(--bg-dark-solid);
+    background: var(--bg-dark-solid, #181818);
     padding: 15px 0;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--border-color, rgba(255, 255, 255, 0.08));
   }
 
-  .main-nav .nav.active {
+  /* Open state (supports either .active or .show for safety) */
+  .main-nav .nav.active,
+  .main-nav .nav.show {
     display: flex;
   }
 
@@ -709,10 +707,10 @@ body {
     margin: 0;
     padding: 0;
     height: auto;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color, rgba(255, 255, 255, 0.08));
     text-align: left;
     display: block;
-    /* Override flex for mobile */
+    /* override flex item sizing */
   }
 
   .main-nav .nav>li:last-of-type {
@@ -723,40 +721,50 @@ body {
     padding: 15px 10px;
     width: 100%;
     justify-content: space-between;
-    /* Pushes arrow to the right */
   }
 
   .main-nav .nav>li>a::after {
     display: none;
   }
 
-  /* Mobile dropdown */
+  /* Mobile dropdown: hidden by default */
   .main-nav .nav li.has-sub .sub-menu {
     position: static;
     display: none;
     width: 100%;
     opacity: 1;
     visibility: visible;
+    /* visible but not displayed */
     box-shadow: none;
     border: none;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 0;
     padding: 5px 0 5px 20px;
-    /* Indent sub-menu items */
+    /* indent items */
     transform: none;
   }
 
+  /* Open submenu via .open on the li (toggled by JS) */
   .main-nav .nav li.has-sub.open>.sub-menu {
     display: block;
   }
 
-  /* Ensure arrow is visible and correctly placed on mobile */
+  /* Region link arrow on mobile (now actually visible) */
   #regions-menu-link::after {
+    content: '▾';
     margin-left: auto;
-    /* Pushes arrow to the far right */
     padding-left: 20px;
+    font-size: 14px;
+    line-height: 1;
+    transition: transform 0.2s ease;
+  }
+
+  /* Rotate arrow when open */
+  .main-nav .nav li.has-sub.open #regions-menu-link::after {
+    transform: rotate(180deg);
   }
 }
+
 
 /* --- Banner Styles (Scoped to .hero-banner) --- */
 .hero-banner {
@@ -1524,14 +1532,14 @@ body::before {
 
 .pricing-card-wrapper.is-featured,
 .pricing-card-wrapper:hover {
-  background: linear-gradient(135deg, var(--primary-color), rgba(247, 104, 33, 0.3));
+  background: linear-gradient(135deg, hsla(0, 0%, 100%, 0.05), hsla(0, 0%, 100%, 0.1));
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 1199.98px) {
   .pricing-card-wrapper {
-    background: linear-gradient(135deg, var(--primary-color), rgba(247, 104, 33, 0.3));
+    background: linear-gradient(135deg, hsla(0, 0%, 100%, 0.05), hsla(0, 0%, 100%, 0.1));
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
 }
@@ -2078,7 +2086,7 @@ p {
 }
 
 .courses-accordion .accordion-body {
-  color: var(--body-text-color);
+  color: var(--muted-text);
   font-size: 0.9rem;
 }
 
@@ -2862,8 +2870,9 @@ p {
 
 /* --- OPTIMIZED FAQ SECTION STYLES --- */
 
+/* --- FAQ SECTION (Bootstrap 5.3.3 compatible) --- */
+
 .faq-section {
-  /* Responsive padding: more on desktop, less on mobile */
   padding: 80px 0;
   position: relative;
 }
@@ -2874,13 +2883,13 @@ p {
   }
 }
 
+/* Intro */
 .faq-intro h2 {
-  /* Responsive font size */
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
-  color: var(--light-text);
+  color: var(--light-text, #fff);
 }
 
 @media (min-width: 992px) {
@@ -2890,52 +2899,50 @@ p {
 }
 
 .faq-intro p {
-  color: var(--muted-text);
+  color: var(--muted-text, #cfcfcf);
   font-size: 1.1rem;
   margin-bottom: 30px;
 }
 
 .faq-contact-link {
-  color: var(--primary-color);
+  color: var(--primary-color, #F76821);
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s ease;
+  transition: color .3s ease;
 }
 
 .faq-contact-link:hover {
-  color: var(--primary-hover-color);
+  color: var(--primary-hover-color, #F75505);
   text-decoration: underline;
 }
 
-/* --- STYLIZED ACCORDION --- */
+/* --- Accordion shell --- */
 .faq-accordion .accordion-item {
-  background: var(--glass-bg);
-  border: var(--glass-border);
+  background: var(--glass-bg, rgba(24, 24, 24, 0.45));
+  border: var(--glass-border, 1px solid rgba(255, 255, 255, 0.08));
   border-radius: 15px;
   margin-bottom: 15px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  transition: all 0.3s ease-in-out;
+  /* Only animate paint-style props; avoid layout jank during collapse */
+  transition: border-color .25s ease, background-color .25s ease, box-shadow .25s ease;
+  /* Helps some engines isolate repaints */
+  contain: layout paint;
 }
 
 .faq-accordion .accordion-item:hover {
   border-color: rgba(247, 104, 33, 0.5);
 }
 
-.faq-accordion .accordion-item .accordion-button:not(.collapsed) {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
+/* Buttons */
 .faq-accordion .accordion-button {
   background-color: transparent;
-  color: var(--light-text);
+  color: var(--light-text, #fff);
   font-weight: 600;
   font-size: 1rem;
-  /* Slightly smaller for better mobile fit */
   border-radius: 15px !important;
   box-shadow: none;
   padding: 20px;
-  /* Adjusted padding for better balance */
 }
 
 @media (min-width: 992px) {
@@ -2944,7 +2951,6 @@ p {
     padding: 25px;
   }
 }
-
 
 .faq-accordion .accordion-button:focus {
   box-shadow: none;
@@ -2955,32 +2961,36 @@ p {
 }
 
 .faq-accordion .accordion-button:not(.collapsed) {
-  color: var(--primary-color);
+  color: var(--primary-color, #F76821);
 }
 
+/* Indicator (+ / −) — override default chevron */
 .faq-accordion .accordion-button::after {
   content: '+';
-  font-family: monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   font-size: 2rem;
   font-weight: 200;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
   width: 30px;
   height: 30px;
-  background-image: none;
-  color: var(--muted-text);
-  transition: transform 0.3s ease, color 0.3s ease;
+  color: var(--muted-text, #cfcfcf);
+  background-image: none !important;
+  transform: none;
+  transition: transform .3s ease, color .3s ease;
 }
 
 .faq-accordion .accordion-button:not(.collapsed)::after {
   content: '−';
   transform: rotate(180deg);
-  color: var(--primary-color);
+  color: var(--primary-color, #F76821);
 }
 
+/* Body */
 .faq-accordion .accordion-body {
-  color: var(--muted-text);
+  color: var(--muted-text, #cfcfcf);
   padding: 0 20px 20px 20px;
   font-size: 0.95rem;
   line-height: 1.7;
@@ -2991,6 +3001,32 @@ p {
     padding: 0 25px 25px 25px;
   }
 }
+
+/* Keep Bootstrap's height transition intact (no layout conflicts) */
+.faq-accordion .accordion-collapse {
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  /* separator instead of button border */
+}
+
+.faq-accordion .accordion-collapse.collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height .35s ease;
+  /* Bootstrap default */
+}
+
+
+/* Reduced motion friendliness */
+@media (prefers-reduced-motion: reduce) {
+
+  .faq-accordion .accordion-item,
+  .faq-accordion .accordion-button::after,
+  .faq-accordion .accordion-collapse.collapsing {
+    transition: none !important;
+  }
+}
+
+
 
 /* -------------Footer Design-------------------*/
 /* --- OPTIMIZED RICH FOOTER STYLES --- */
@@ -3070,6 +3106,10 @@ p {
   color: var(--light-text);
   border-radius: var(--border-radius);
   padding: 0.75rem 1rem;
+}
+
+.form-control::placeholder {
+  color: var(--body-text-color);
 }
 
 
