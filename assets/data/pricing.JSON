@@ -1,0 +1,226 @@
+{
+    "courses": {
+        "Primary_Education": {
+            "4_Subject_bundle": {
+                "title": "4 Subject Bundle",
+                "description": "",
+                "is_popular": true,
+                "weekly_sessions": "8 Sessions / Week",
+                "note": "Insert a consult / Contact Button instead of enroll now",
+                "key_features": [
+                    "Covers All Core Subjects (English, Urdu, Math, Science)",
+                    "Engaging, Child-Friendly Lessons that make learning enjoyable from anywhere",
+                    "Strong Academic Foundation for students transitioning across schools or systems",
+                    "Learn from Anywhere – ideal for families on visit visas or relocating"
+                ],
+                "fees": {
+                    "SAR": "SAR 599",
+                    "QAR": "QAR 599.00",
+                    "KWD": "KWD 55.00",
+                    "BHD": "BHD 60.00",
+                    "OMR": "OMR 60.00",
+                    "AED": "AED 599",
+                    "GBP": "GBP 119"
+                }
+            },
+            "3_Subject_bundle": {
+                "title": "3 Subject Bundle",
+                "description": "",
+                "is_popular": false,
+                "weekly_sessions": "6 Sessions / Week",
+                "key_features": [
+                     "Covers Essential Core Subjects (English, Urdu, Math, Science)",
+                    "Engaging, Child-Friendly Lessons that make learning enjoyable from anywhere",
+                    "Strong Academic Foundation for students transitioning across schools or systems",
+                    "Learn from Anywhere – ideal for families on visit visas or relocating"
+                ],
+                "fees": {
+                    "SAR": "SAR 499",
+                    "QAR": "QAR 499.00",
+                    "KWD": "KWD 45.00",
+                    "BHD": "BHD 50.00",
+                    "OMR": "OMR 50.00",
+                    "AED": "AED 499",
+                    "GBP": "GBP 99"
+                }
+            }
+        },
+        "Grade_8_9": {
+            "Comprehensive_Course": {
+                "title": "Comprehensive Course",
+                "description": "For students building a strong O Level foundation while staying ahead in schoolwork.",
+                "is_popular": true,
+                "plan_type": "Per Subject",
+                "note": "Insert a consult / Contact Button instead of enroll now",
+                "sessions_per_subject": 2,
+                "available_subjects": [
+                    "Economics",
+                    "Business Studies",
+                    "Accounting",
+                    "Physics",
+                    "Chemistry",
+                    "Mathematics",
+                    "Biology"
+                ],
+                "per_subject_fee": {
+                    "SAR": 499,
+                    "QAR": 499,
+                    "KWD": 45,
+                    "BHD": 50,
+                    "OMR": 50,
+                    "AED": 499,
+                    "GBP": 99
+                },
+                "key_features": [
+                    "Support with Schoolwork to stay on track and improve grades",
+                    "Early Preparation for O Level with focused concept-building",
+                    "Custom Batches tailored to student needs and subject level",
+                    "Full Access to SASS for progress tracking, quizzes, and personalized feedback"
+                ]
+            }
+        },
+        "IGCSE_GCSE": {
+            "Comprehensive_Course": {
+                "title": "Comprehensive Crash Course",
+                "description": "For students who want complete preparation for their IGCSE subject—from concepts to final exam readiness.",
+                "is_popular": true,
+                "plan_type": "Per Subject",
+                "sessions_per_subject": 2,
+                "available_subjects": [
+                    "Economics",
+                    "Business Studies",
+                    "Accounting",
+                    "Physics",
+                    "Chemistry",
+                    "Mathematics",
+                    "Biology"
+                ],
+                "per_subject_fee": {
+                    "SAR": 699,
+                    "QAR": 699,
+                    "KWD": 60,
+                    "BHD": 70,
+                    "OMR": 70,
+                    "AED": 699,
+                    "GBP": 140
+                },
+                "key_features": [
+                    "3 Month Crash Course covering full syllabus, revision, and exam prep",
+                    "Full SASS Access with Performance Tracking, Notes & Quizzes",
+                    "Live Classes with Recordings for flexible learning",
+                    "Access to Multiple Workshops including Exam Strategy, Past Paper Practice, Subject-Specific Support & Academic Counseling"
+                ]
+            },
+            "Accelerated_Prep_Course": {
+                "title": "Accelerated Crash Course",
+                "description": "For students who’ve covered the basics and need focused revision, exam strategies, and final prep to feel fully ready before exams.",
+                "is_popular": false,
+                "plan_type": "Per Subject",
+                "sessions_per_subject": 3,
+                "payment_type": "Single Payment",
+                "available_subjects": [
+                    "Economics",
+                    "Business Studies",
+                    "Accounting",
+                    "Physics",
+                    "Chemistry",
+                    "Mathematics",
+                    "Biology"
+                ],
+                "per_subject_fee": {
+                    "SAR": 1499,
+                    "QAR": 1499,
+                    "KWD": 130,
+                    "BHD": 150,
+                    "OMR": 150,
+                    "AED": 1499,
+                    "GBP": 299
+                },
+                "key_features": [
+                    "6 Week Intensive Crash Course for rapid syllabus coverage and focused exam prep",
+                    "Full SASS Access with Performance Tracking, Notes & Quizzes",
+                    "Live Classes with Recordings for flexible learning",
+                    "Access to Targeted Workshops focused on Revision, Concept Gaps, Exam Strategy & Last-Minute Reinforcement"
+                ]
+            }
+        },
+        "A_levels": {
+            "Comprehensive_Course": {
+                "title": "Comprehensive Crash Course",
+                "description": "A complete crash course for AS and A2 students—designed to reinforce concepts, fill gaps, and prepare you thoroughly for final exams.",
+                "is_popular": true,
+                "plan_type": "Per Subject",
+                "sessions_per_subject": 2,
+                "available_subjects": [
+                    "Economics",
+                    "Business Studies",
+                    "Accounting",
+                    "Physics",
+                    "Chemistry",
+                    "Mathematics",
+                    "Biology"
+                ],
+                "per_subject_fee": {
+                    "SAR": 799,
+                    "QAR": 799,
+                    "KWD": 70,
+                    "BHD": 80,
+                    "OMR": 80,
+                    "AED": 799,
+                    "GBP": 159
+                },
+                "key_features": [
+                    "3 Month Course covering full syllabus, revision, and exam prep",
+                    "Full SASS Access with Performance Tracking, Notes & Quizzes",
+                    "Live Classes with Recordings for flexible learning",
+                    "Access to Multiple Workshops including Exam Strategy, Past Paper Practice, Subject-Specific Support & Academic Counseling"
+                ]
+            }
+        },
+        "SAT": {
+            "SAT_Mastery_Course": {
+                "title": "SAT Mastery Course",
+                "description": "For students aiming for top scores with a complete 2-month plan covering every section of the SAT.",
+                "is_popular": true,
+                "weekly_sessions": "4 Sessions",
+                "key_features": [
+                    "2 Month Course covering all SAT sections, strategies, and full-length exam practice",
+                    "Full Access to SASS for Practice Tests, Notes & Targeted Quizzes",
+                    "Full-Length Proctored Mock Practice tests",
+                    "Access to SAT Workshops including Test Strategy, Time Management & Section-Wise Review"
+                ],
+                "fees": {
+                    "SAR": "SAR 699.00",
+                    "QAR": "QAR 699.00",
+                    "KWD": "KWD 60.00",
+                    "BHD": "BHD 70.00",
+                    "OMR": "OMR 70.00",
+                    "AED": "AED 699.00",
+                    "GBP": "GBP 139"
+                }
+            },
+            "SAT_Express_Prep": {
+                "title": "SAT Express Course",
+                "description": "A high-intensity SAT bootcamp for quick improvement, smarter techniques, and confident test-day performance.",
+                "is_popular": false,
+                "weekly_sessions": "6 Sessions",
+                "payment_type": "Single Payment",
+                "key_features": [
+                    "1 Month intensive Course covering all SAT sections, strategies, and full-length exam practice",
+                    "Full Access to SASS for Practice Tests, Notes & Targeted Quizzes",
+                    "Full-Length Proctored Mock Practice tests",
+                    "Access to SAT Workshops including Test Strategy, Time Management & Section-Wise Review"
+                ],
+                "fees": {
+                    "SAR": "SAR 999.00",
+                    "QAR": "QAR 999.00",
+                    "KWD": "KWD 90.00",
+                    "BHD": "BHD 100.00",
+                    "OMR": "OMR 100.00",
+                    "AED": "AED 999.00",
+                    "GBP": "GBP 199"
+                }
+            }
+        }
+    }
+}
